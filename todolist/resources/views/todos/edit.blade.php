@@ -1,7 +1,7 @@
 @extends('layouts.app')
 
 @section('content')
-    <a href="/todo/{{$todo->id}}" class="btn btn-default">Go back</a>
+    <a href="/todo/{{$todo->id}}" class="btn btn-default">Go Back</a>
     <h1>Edit ToDo</h1>
 
     {!! Form::open(['action' => ['TodosController@update', $todo->id], 'method' => 'POST']) !!}
