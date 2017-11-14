@@ -14,3 +14,13 @@
 Route::get('/', function () {
     return view('welcome');
 });
+
+/**
+ * Includes all routes for that controller
+ * store
+ * delete
+ * update
+ * edit
+ * etc...
+ */
+Route::resource('api/items', 'ItemsController');
